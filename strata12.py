@@ -111,7 +111,7 @@ def run(gamepad,offset):
     def Screenshot(area,i):
         with mss.mss() as sct:
             # The screen part to capture
-            path = "combo1/" + i + ".png"
+            path = "combo/" + i + ".png"
             # Grab the data
             sct_img = sct.grab(area)
             # Save to the picture file
@@ -125,7 +125,7 @@ def run(gamepad,offset):
         area = {"top": 103 + offset * offsetTop, "left": left, "width": 22, "height": 22}
         Screenshot(area, str(i))
 
-    result = predict_categories_for_test_folder(model, "combo1/")
+    result = predict_categories_for_test_folder(model, "combo/")
 
     def mapKey(key):
         if key == 'up':
