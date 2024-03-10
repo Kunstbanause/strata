@@ -1,4 +1,4 @@
-#strata
+# strata
 Image recognition for Helldivers 2 stratagem combinations.
 
 # Install
